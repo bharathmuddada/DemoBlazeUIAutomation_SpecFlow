@@ -50,6 +50,7 @@ namespace DemoBlazeSpecFlowTests.StepDefinitions
             
         }
 
+        
 
         [When(@"I login with '([^']*)' and '([^']*)'")]
         public void WhenILoginWithAnd(string username, string password)
@@ -62,7 +63,7 @@ namespace DemoBlazeSpecFlowTests.StepDefinitions
             loginpage.DoLogin(username, password);
         }
 
-
+        [Given(@"I login with ""([^""]*)"" credentials")]
         [When(@"I login with ""([^""]*)"" credentials")]
         public void WhenILoginWithCredentials(string credtype)
         {
